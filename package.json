@@ -10,6 +10,11 @@
     "cert": "./bin/generate_cert.sh server",
     "host": "webpack-dev-server --mode development --devrig"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "keywords": [
     "twitch",
     "chatbots",
@@ -49,11 +54,16 @@
     "webpack-dev-server": "^3.11.1"
   },
   "dependencies": {
+    "ckey": "^1.0.2",
     "core-js": "^3.5.0",
     "dotenv": "^8.2.0",
+    "file-system": "^2.2.2",
+    "find-config": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
+    "path": "^0.12.7",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-scripts": "^4.0.1",
     "react-wordcloud": "^1.2.7",
     "stopword": "^1.0.6",
     "tmi.js": "^1.2.1"

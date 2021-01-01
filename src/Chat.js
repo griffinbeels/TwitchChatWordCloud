@@ -3,7 +3,8 @@ import ReactDOM from "react-dom"
 import { SimpleWordcloud } from './Wordcloud.js' // word cloud construction
 const tmi = require('tmi.js'); // necessary for twitch client
 const sw = require('stopword'); // stopwords for processing message
-require('dotenv').config(); // credentials for bot login
+// require('dotenv').config({ path: require('find-config')('.env') })
+// require('dotenv').config();
 
 // CONFIGS
 // TODO: users can spend bits to increase the weight of their next message in the chat (e.g., your words will appear larger and have a bigger impact on the wordcloud!).
@@ -23,11 +24,11 @@ var client = null;
 // TODO: change structure to be more similar to App.js example
 const opts = {
   identity: {
-    username: process.env.BOT_USERNAME,
-    password: process.env.OAUTH_TOKEN
+    username: process.env.REACT_APP_BOT_USERNAME,
+    password: process.env.REACT_APP_OAUTH_TOKEN
   },
   channels: [
-    process.env.CHANNEL_NAME
+    process.env.REACT_APP_CHANNEL_NAME
   ]
 };
   
