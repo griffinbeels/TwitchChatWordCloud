@@ -1,5 +1,5 @@
 {
-  "name": "react-frontend",
+  "name": "chat-word-cloud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,11 +10,24 @@
     "cert": "./bin/generate_cert.sh server",
     "host": "webpack-dev-server --mode development --devrig"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "twitch",
+    "chatbots",
+    "irc",
+    "word cloud",
+    "wordcloud",
+    "extension",
+    "twitch extension",
+    "twitch wordcloud extension"
+  ],
+  "author": "Griffin Beels",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/griffinbeels/TwitchChatWordCloud.git"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
@@ -27,19 +40,23 @@
     "html-webpack-plugin": "^4.0.0-beta.11",
     "isomorphic-fetch": "^2.2.1",
     "jest": "^24.9.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.14.1",
     "regenerator-runtime": "^0.13.3",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.21.0",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.11.1"
   },
   "dependencies": {
     "core-js": "^3.5.0",
+    "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-wordcloud": "^1.2.7",
+    "stopword": "^1.0.6",
+    "tmi.js": "^1.2.1"
   },
   "babel": {
     "presets": [
